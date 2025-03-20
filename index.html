@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Plataforma de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>CineStream</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Buscar películas...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Películas</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="#">Mi Lista</a></li>
+                    <li>
+                        <div class="theme-switch">
+                            <i class="fas fa-sun"></i>
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Dune: Parte Dos</h2>
+                    <p>Paul Atreides se une a los Fremen y comienza un viaje espiritual y político para vengar la traición contra su familia.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary"><i class="fas fa-play"></i> Reproducir</button>
+                        <button class="btn btn-secondary"><i class="fas fa-info-circle"></i> Más información</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="movie-section">
+                <div class="section-header">
+                    <h2>Películas Populares</h2>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Géneros <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Acción</a>
+                            <a href="#">Aventura</a>
+                            <a href="#">Comedia</a>
+                            <a href="#">Drama</a>
+                            <a href="#">Ciencia Ficción</a>
+                            <a href="#">Terror</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-grid">
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+1" alt="Película 1">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Oppenheimer</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 8.5</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+2" alt="Película 2">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Barbie</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 7.9</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+3" alt="Película 3">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Pobres Criaturas</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 8.2</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+4" alt="Película 4">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Los Asesinos de la Luna</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 7.8</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-section">
+                <div class="section-header">
+                    <h2>Recién Agregadas</h2>
+                </div>
+                <div class="movie-grid">
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+5" alt="Película 5">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Wonka</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 7.2</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+6" alt="Película 6">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Aquaman 2</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 6.8</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+7" alt="Película 7">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Napoleón</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 7.5</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+8" alt="Película 8">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>The Marvels</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 6.5</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-section">
+                <div class="section-header">
+                    <h2>Recomendadas para ti</h2>
+                </div>
+                <div class="movie-grid">
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+9" alt="Película 9">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Guardianes de la Galaxia Vol. 3</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 8.0</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+10" alt="Película 10">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>John Wick 4</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 7.8</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+11" alt="Película 11">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Misión Imposible 7</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 7.7</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-poster">
+                            <img src="https://via.placeholder.com/300x450/1a1a2e/ffffff?text=Película+12" alt="Película 12">
+                            <div class="movie-overlay">
+                                <button class="play-btn"><i class="fas fa-play"></i></button>
+                            </div>
+                        </div>
+                        <div class="movie-info">
+                            <h3>Spider-Man: A través del Spider-Verso</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 8.7</span>
+                                <span class="year">2023</span>
+                            </div>
+                            <div class="movie-buttons">
+                                <button class="btn-small"><i class="fas fa-play"></i> Ver</button>
+                                <button class="btn-small"><i class="fas fa-plus"></i> Mi Lista</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CineStream</h2>
+                    <p>Tu plataforma de películas favorita</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Explorar</h3>
+                        <ul>
+                            <li><a href="#">Películas</a></li>
+                            <li><a href="#">Series</a></li>
+                            <li><a href="#">Documentales</a></li>
+                            <li><a href="#">Novedades</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Ayuda</h3>
+                        <ul>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Términos de uso</a></li>
+                            <li><a href="#">Privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Síguenos</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 CineStream. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="video-player" class="video-player">
+        <div class="video-container">
+            <div class="video-header">
+                <h3 id="video-title">Título de la película</h3>
+                <button id="close-video"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="video-content">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p>Simulación de reproductor de video</p>
+                </div>
+                <div class="video-controls">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="control-buttons">
+                        <button><i class="fas fa-play"></i></button>
+                        <button><i class="fas fa-pause"></i></button>
+                        <button><i class="fas fa-volume-up"></i></button>
+                        <div class="time">00:00 / 02:15:30</div>
+                        <button><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
